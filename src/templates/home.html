@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="row">
+	<div class="col-md-6">
+	{% if request.user.is_authenticated %}
+	  <!-- Here Profile of login user -->
+		<h1> User profile</h1>
+		<br/>
+			<h4> User_name: {{ request.user.username }} </h4>
+			<h4> Email_id: {{ request.user.email }} </h4>
+
+	{% else %}
+		<h3> Please login the account</h3>
+	{% endif %}
+</div>
+</div>
+
+{% endblock content %}
