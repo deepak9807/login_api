@@ -30,4 +30,4 @@ http://127.0.0.1:8000/api/register/
 
 Generate the Token:
 http://127.0.0.1:8000/api-token/
-Enter the user and password this api generate the token for access api except Login and Registration API
+Enter the Email and password this api generate the token for access api except Login and Registration API
