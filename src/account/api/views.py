@@ -15,11 +15,12 @@ from rest_framework.status import HTTP_200_OK,HTTP_406_NOT_ACCEPTABLE
 User = get_user_model()
 
 class UserCreateAPIView(CreateAPIView):
+	permission_classes = (AllowAny,)
 	serializer_class = UserCreateAPISerializer
 	queryset = User.objects.all()
 
 class UserLoginAPIView(APIView):
-	#permission_classes = (AllowAny,)
+	permission_classes = (AllowAny,)
 	serializer = UserLoginAPISerializer
 	def post(self,request, *arg,**kwagrs):
 		data = request.data
