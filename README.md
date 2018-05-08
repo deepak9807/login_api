@@ -12,13 +12,18 @@ $ git clone https://github.com/deepakchuabe/login_api.git
 
 Step 2:
 Now we are ready to active the virtual environment using below comment
+
 $ cd login_api
+
 $ source bin/active
    It look like this:
    <login-api>$
+   
 Step 3:
 chagne directory and go to inside the src folder
+
 $cd login_api/src
+
 Run the 
 $ python manage.py runserver
  open the bellow url in Browser
