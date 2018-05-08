@@ -6,9 +6,12 @@ Blow step to use this code on local machine
 
 Step 1:
 Clone the git code
+$ git clone https://github.com/deepakchuabe/login_api.git
+
 
 Step 2:
 Now we are ready to active the virtual environment using below comment
+$ cd login_api
 $ source bin/active
    It look like this:
    <login-api>$
