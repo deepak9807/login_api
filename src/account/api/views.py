@@ -19,13 +19,13 @@ class UserCreateAPIView(CreateAPIView):
 	serializer_class = UserCreateAPISerializer
 	queryset = User.objects.all()
 
-class UserLoginAPIView(APIView):
-	permission_classes = (AllowAny,)
-	serializer = UserLoginAPISerializer
-	def post(self,request, *arg,**kwagrs):
-		data = request.data
-		serializer = UserLoginAPISerializer(data=data)
-		if serializer.is_valid(raise_exception=True):
-			new_data = serializer.data
-			return Response(new_data,status=HTTP_200_OK)
-		return Response(serializer.error, status= HTTP_406_NOT_ACCEPTABLE)
+# class UserLoginAPIView(APIView):
+# 	permission_classes = (AllowAny,)
+# 	serializer = UserLoginAPISerializer
+# 	def post(self,request, *arg,**kwagrs):
+# 		data = request.data
+# 		serializer = UserLoginAPISerializer(data=data)
+# 		if serializer.is_valid(raise_exception=True):
+# 			new_data = serializer.data
+# 			return Response(new_data,status=HTTP_200_OK)
+# 		return Response(serializer.error, status= HTTP_406_NOT_ACCEPTABLE)
